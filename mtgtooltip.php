@@ -216,6 +216,6 @@ class plgSystemMtgtooltip extends JPlugin {
                 || JRequest::getCmd( 'do' ) == 'edit'   
                 || in_array( JRequest::getCmd( 'view' ), array( 'edit', 'form' ) )
                 || in_array( JRequest::getCmd( 'layout' ), array( 'edit', 'form', 'write' ) )
-                || in_array( JRequest::getCmd( 'option' ), array( 'com_contentsubmit', 'com_cckjseblod' ) ));
-    }                               
+                || in_array( JRequest::getCmd( 'option' ), array( 'com_contentsubmit', 'com_cckjseblod', 'com_k2' ) ));
+    }
 }
