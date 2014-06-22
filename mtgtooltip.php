@@ -141,7 +141,7 @@ class plgSystemMtgtooltip extends JPlugin {
                 $lines = array();
                 foreach ($dirty_lines as $line) {
                     $clean = trim(strip_tags($line));
-                    $clean = trim(preg_replace("/[^\d\s\w]*/", '', $clean));
+                    $clean = trim(preg_replace("/[^\d\s\w,]*/", '', $clean));
                     if ($clean !== "") {
                         $lines[] = $clean;
                     }

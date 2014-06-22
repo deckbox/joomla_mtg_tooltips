@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/plugin-install.dtd">
-<install version="1.5" type="plugin" group="system">
+<extension version="1.5" type="plugin" group="system">
   <name>System - Magic the Gathering Card Tooltips</name>
   <creationDate>February 2012</creationDate>
   <author>Sebastian Zaha</author>
@@ -8,11 +8,10 @@
   <authorUrl>http://deckbox.org</authorUrl>
   <copyright>Copyright 2012 deckbox.org</copyright>
   <license>GNU/GPL</license>
-  <version>0.3.0</version>
+  <version>0.3.1</version>
   <description>Plugin that provides a shortcode for creating Magic the Gathering card names with image tooltips.</description>
   
   <files>
     <filename plugin="mtgtooltip">mtgtooltip.php</filename>
   </files>
-</install>
-
+</extension>
