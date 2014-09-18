@@ -6,9 +6,9 @@
   <author>Sebastian Zaha</author>
   <authorEmail>sebastian.zaha@gmail.com</authorEmail>
   <authorUrl>http://deckbox.org</authorUrl>
-  <copyright>Copyright 2012 deckbox.org</copyright>
+  <copyright>Copyright 2012-2014 Sebastian Zaha</copyright>
   <license>GNU/GPL</license>
-  <version>0.3.1</version>
+  <version>0.3.3</version>
   <description>Plugin that provides a shortcode for creating Magic the Gathering card names with image tooltips.</description>
   
   <files>

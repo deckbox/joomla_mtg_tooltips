@@ -20,8 +20,6 @@ mouseover functionality.
 
 This plugin works across all joomla extensions such as the Kuena forum software.
 
-Joomla 1.x and 2.x are supported. Joomla 3.x is **not** supported yet.
-
 Usage
 -----
 
