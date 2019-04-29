@@ -5,12 +5,11 @@
   <creationDate>February 2012</creationDate>
   <author>Sebastian Zaha</author>
   <authorEmail>sebastian.zaha@gmail.com</authorEmail>
-  <authorUrl>http://deckbox.org</authorUrl>
-  <copyright>Copyright 2012-2014 Sebastian Zaha</copyright>
+  <authorUrl>https://deckbox.org</authorUrl>
+  <copyright>Copyright 2012-2019 Sebastian Zaha</copyright>
   <license>GNU/GPL</license>
-  <version>0.3.3</version>
+  <version>0.3.4</version>
   <description>Plugin that provides a shortcode for creating Magic the Gathering card names with image tooltips.</description>
-  
   <files>
     <filename plugin="mtgtooltip">mtgtooltip.php</filename>
   </files>

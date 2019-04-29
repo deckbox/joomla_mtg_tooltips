@@ -1,9 +1,9 @@
 <?php
 /**
- * @version     0.3.3
+ * @version     0.3.4
  * @package     Mtgtooltip
  * @author      Sebastian Zaha. Part of the code taken from the snippets joomla plugin by Peter van Westen <peter@nonumber.nl>
- * @copyright   Copyright (C) 2012-2014 Sebastian Zaha. All rights reserved.
+ * @copyright   Copyright (C) 2012-2019 Sebastian Zaha. All rights reserved.
  * @license     GNU/GPL v2
  */
 
@@ -18,7 +18,7 @@ class plgSystemMtgtooltip extends JPlugin {
     {
         parent::__construct( $subject, $config );
 
-        $document = &JFactory::getDocument();
+        $document = JFactory::getDocument();
         $document->addScript( 'http://deckbox.org/javascripts/bin/tooltip.js' );
 
         $this->comment_start = '<!-- START: Mtg -->';
@@ -141,7 +141,7 @@ class plgSystemMtgtooltip extends JPlugin {
                 $lines = array();
                 foreach ($dirty_lines as $line) {
                     $clean = trim(strip_tags($line));
-                    $clean = trim(preg_replace("/[^\d\s\w,]*/", '', $clean));
+                    $clean = trim(preg_replace("/[^\d\s\w,'-]*/", '', $clean));
                     if ($clean !== "") {
                         $lines[] = $clean;
                     }
@@ -202,14 +202,6 @@ class plgSystemMtgtooltip extends JPlugin {
     {
         $str = preg_replace( $this->regex, '', $str );
         $str = preg_replace( '#<\!-- (START|END): SN_[^>]* -->#', '', $str );
-        if ( !$this->place_comments ) {
-            $str = str_replace( array(
-                       $this->comment_start, $this->comment_end,
-                       htmlentities( $this->comment_start ), htmlentities( $this->comment_end ),
-                       urlencode( $this->comment_start ), urlencode( $this->comment_end )
-                   ), '', $str );
-            $str = preg_replace( '#'.preg_quote( $this->message_start, '#' ).'.*?'.preg_quote( $this->message_end, '#' ).'#', '', $str );
-        }
     }
 
     function isEditPage()                    
