@@ -19,7 +19,7 @@ class plgSystemMtgtooltip extends JPlugin {
         parent::__construct( $subject, $config );
 
         $document = JFactory::getDocument();
-        $document->addScript( 'http://deckbox.org/javascripts/bin/tooltip.js' );
+        $document->addScript( 'https://deckbox.org/javascripts/bin/tooltip.js' );
 
         $this->comment_start = '<!-- START: Mtg -->';
         $this->comment_end = '<!-- END: Mtg -->';
@@ -155,7 +155,7 @@ class plgSystemMtgtooltip extends JPlugin {
                         $line = trim($bits[2]);
                     }
                     $line = str_replace("’", "'", $line);
-                    $lines_html[] = $count . '&nbsp;<a href="http://deckbox.org/mtg/'. $line . '">' . $line . '</a>';
+                    $lines_html[] = $count . '&nbsp;<a href="https://deckbox.org/mtg/'. $line . '">' . $line . '</a>';
                 }
 
                 $html .= implode("<br/>", $lines_html);

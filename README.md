@@ -10,9 +10,9 @@ Part of the code is taken from the *Snippets* joomla plugin, by Peter
 Description
 -----------
 
-[deckbox.org](http://deckbox.org) provides a javascript utility that enables links to its 
+[deckbox.org](https://deckbox.org) provides a javascript utility that enables links to its 
 Magic the Gathering card pages to automatically show card image tooltips on hover. 
-For more information see [the tooltips integration page](http://deckbox.org/help/tooltips).
+For more information see [the tooltips integration page](https://deckbox.org/help/tooltips).
 
 This **Joomla** plugin provides a `{mtg}` tag that turns a simple card list into links 
 to card pages. It automatically includes the tooltip.js file that provides the
